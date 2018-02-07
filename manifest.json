@@ -1,14 +1,16 @@
 {
 	"name": "Typing Sound with Lupin",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"manifest_version": 2,
 	"description": "フォーム入力時にルパンのサウンドを鳴らす",
+	"icons": {
+		"128": "icons/128.png"
+	},
 	"content_scripts": [
 		{
 			"matches": ["https://*/*", "http://*/*", "file://*/*"],
 			"js": [
 				"scripts/jquery.min.js",
-				"scripts/ion.sound.js",
 				"main.js"
 			]
 		}
