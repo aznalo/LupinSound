@@ -1,0 +1,20 @@
+{
+	"name": "Typing Sound with Lupin",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "フォーム入力時にルパンのサウンドを鳴らす",
+	"content_scripts": [
+		{
+			"matches": ["https://*/*", "http://*/*", "file://*/*"],
+			"js": [
+				"scripts/jquery.min.js",
+				"scripts/ion.sound.js",
+				"main.js"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		"sounds/enter.wav",
+		"sounds/input.mp3"
+	]
+}
